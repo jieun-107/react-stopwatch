@@ -24,8 +24,8 @@ export default function Stopwatch() {
 
     if (isRunning) {
       intervalId = setInterval(() => {
-        setTime((time) => time + 1);
-      }, 0.01);
+        setTime((time) => time + 10);
+      }, 10);
     }
 
     return () => {
