@@ -49,7 +49,7 @@ export default function Stopwatch() {
           >
             {/* 시작버튼 <Play size={24} /> */}
             {/* 정지버튼  <Pause size={24} /> */}
-            <Play size={24} />
+            {isRunning ? <Pause size={24} /> : <Play size={24} /> }
           </button>
 
           <button 
